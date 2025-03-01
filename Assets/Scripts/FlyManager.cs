@@ -30,6 +30,14 @@ public class FlyManager : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        GameManager.instance.GameOver();
+        StartCoroutine(WaitAndGameOver());
+    }
+    IEnumerator WaitAndGameOver()
+    {
+        yield return new WaitForSeconds(0.011f);
+        if (GameManager.instance != null)
+        {
+            GameManager.instance.GameOver();
+        }
     }
 }
