@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -25,7 +25,7 @@ public class FlyManager : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        transform.rotation =Quaternion.Euler(0, 0, rigidbody2D.velocity.y*_rotateSpeed);  
+        transform.rotation =Quaternion.Euler(0, 0, rigidbody2D.velocity.y*_rotateSpeed); 
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

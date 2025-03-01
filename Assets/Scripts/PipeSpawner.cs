@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,7 +19,7 @@ public class PipeSpawner : MonoBehaviour
 
     private void PipeSpawn()
     {
-        Vector3 pipePos = transform.position+new Vector3(0,Random.Range(-_yPosRange,_yPosRange));
+        Vector3 pipePos = transform.position+new Vector3(0,Random.Range(-_yPosRange,_yPosRange));// cụ thể chưa hiểu rõ 
         GameObject pipe = Instantiate(_pipe, pipePos, Quaternion.identity);
         Destroy(pipe,10f);
     }

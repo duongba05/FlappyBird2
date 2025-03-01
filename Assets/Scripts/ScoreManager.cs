@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -39,11 +39,5 @@ public class ScoreManager : MonoBehaviour
         score++;
         _currentScore.text = score.ToString() ;
         RefreshHighScore() ;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
